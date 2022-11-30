@@ -1,9 +1,8 @@
-export default function (props: { id: string }) {
-    console.log(props, props.id)
+export default function ({ params }: { params: { id: string } }) {
     return <div style={{
         border: "solid red 5px",
         height: 200,
         width: 200,
         fontSize: 72
-    }}>{props.id}</div>;
+    }}>{params.id}</div>;
 }
